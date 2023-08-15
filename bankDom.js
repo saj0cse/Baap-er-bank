@@ -48,7 +48,7 @@ document.getElementById('withdraw-btn').addEventListener('click', function(){
       // add input value and deposit amount 
       if(withdrawInputValue >= 0 ){
           
-            if(balanceBalanceValue >= withdrawInputValue){
+            if(balanceBalanceValue > withdrawInputValue){
                 const currentWithdrawAmonut = withdrawInputValue + withdrawBalanceValue;
                 withdrawBalanceData.innerText = currentWithdrawAmonut;  
                 balanceBalanceData.innerText = (balanceBalanceValue - withdrawInputValue);

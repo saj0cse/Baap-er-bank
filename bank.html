@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bank Dashboard</title>
+    <!-- Tailwing CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUL -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header>
+        <h1 class="text-5xl	mt-20 text-center"><span class="text-indigo-600">Dear SHAKIL</span>, Welcome to your <span
+                class="font-semibold text-cyan-500	">Baap-Er-Bank!</span></h1>
+
+    </header>
+    <main>
+                <section class="w-9/12 m-auto mt-20">
+                    <div class="grid lg:grid-cols-3 gap-10">
+                        <div class="btn-primary p-5 rounded-lg">
+                            <h3 class="text-3xl">Deposit</h3>
+                            <h2 class="text-5xl">$<span  id="deposit-balance" >00</span></h2>
+                        </div>
+                        <div class="btn-secondary p-5 rounded-lg">
+                            <h3 class="text-3xl">Withdraw</h3>
+                            <h2  class="text-5xl">$<span id="withdraw-balance">00</span></h2>
+                        </div>
+                        <div class="btn-error p-5 rounded-lg text-white">
+                            <h3 class="text-3xl">Balance</h3>
+                            <h2  class="text-5xl">$<span id="balance-balance">1240</span></h2>
+                        </div>
+                    </div>
+                </section>
+
+             
+
+                <section class="w-9/12 m-auto mt-20">
+                    <div class="grid lg:grid-cols-2 gap-10 ">
+                        <div class="btn-info p-5 rounded-lg text-white">
+                            <h3 class="text-3xl mb-5">Deposit</h3>
+                            <input class="block mb-5 px-3 h-8 lg:w-4/5 rounded-lg bg-white text-black" type="text" name=""
+                            id="deposit-input" placeholder="$ Deposit Amount" >
+                            <button id="deposti-btn" class="btn btn-primary">Deposit</button>
+                      
+                        </div>
+                        <div class="btn-success p-5 rounded-lg text-white">
+                            <h3 class="text-3xl mb-5">Withdraw</h3>
+                            <input class="block mb-5 px-3 h-8 lg:w-4/5 rounded-lg bg-white text-black" type="text" name=""
+                            id="withdraw-input" placeholder="$ Withdraw Amount" >
+                            <button id="withdraw-btn" class="btn btn-primary">Withdraw</button>
+                        </div>
+                       
+                    </div>
+                </section>
+
+                
+    </main>
+    <footer>
+
+    </footer>
+
+    <!-- js file -->
+    <script src="bankDom.js"></script>
+</body>
+</html>
